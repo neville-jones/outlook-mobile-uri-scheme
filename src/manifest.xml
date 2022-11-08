@@ -10,10 +10,6 @@
   <IconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
   <HighResolutionIconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/logo-filled.png" />
   <SupportUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net" />
-  <AppDomains>
-    <AppDomain>ms-outlook://compose</AppDomain>
-    <AppDomain>ms-outlook://emails</AppDomain>
-  </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
@@ -53,9 +49,49 @@
     </Requirements>
     <Hosts>
       <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadGroup">
+                <Label resid="groupLabel" />
+                <Control xsi:type="Button" id="msgReadeOpenPaneButton">
+                  <Label resid="paneReadButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneReadSuperTipTitle" />
+                    <Description resid="paneReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image resid="icon-16" size="16" />
+                    <bt:Image resid="icon-32" size="32" />
+                    <bt:Image resid="icon-80" size="80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readCustomPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
       </Host>
     </Hosts>
     <Resources>
+      <bt:Images>
+        <bt:Image id="icon-16" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-16.png" />
+        <bt:Image id="icon-32" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-32.png" />
+        <bt:Image id="icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="URI Test" />
+        <bt:String id="paneReadButtonLabel" DefaultValue="URI" />
+        <bt:String id="paneReadSuperTipTitle" DefaultValue="use some URIs to try and make new emails" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane where you can use some URIs to try and construct new emails"/>
+      </bt:LongStrings>
     </Resources>
     <VersionOverrides xsi:type="VersionOverridesV1_1" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1">
       <Requirements>
@@ -65,6 +101,30 @@
       </Requirements>
       <Hosts>
         <Host xsi:type="MailHost">
+                <DesktopFormFactor>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadGroup">
+                <Label resid="groupLabel" />
+                <Control xsi:type="Button" id="msgReadeOpenPaneButton">
+                  <Label resid="paneReadButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneReadSuperTipTitle" />
+                    <Description resid="paneReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image resid="icon-16" size="16" />
+                    <bt:Image resid="icon-32" size="32" />
+                    <bt:Image resid="icon-80" size="80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readCustomPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
           <MobileFormFactor>
             <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
               <Group id="msgMobileReadGroup">
@@ -72,15 +132,15 @@
                 <Control id="msgMobileReadOpenPaneButton" xsi:type="MobileButton">
                   <Label resid="paneMobileReadButtonLabel" />
                   <Icon>
-                    <bt:Image resid="icon-16" size="16" scale="1" />
+                    <bt:Image resid="icon-16" size="25" scale="1" />
                     <bt:Image resid="icon-32" size="32" scale="1" />
-                    <bt:Image resid="icon-80" size="80" scale="1" />
-                    <bt:Image resid="icon-16" size="16" scale="2" />
+                    <bt:Image resid="icon-80" size="48" scale="1" />
+                    <bt:Image resid="icon-16" size="25" scale="2" />
                     <bt:Image resid="icon-32" size="32" scale="2" />
-                    <bt:Image resid="icon-80" size="80" scale="2" />
-                    <bt:Image resid="icon-16" size="16" scale="3" />
+                    <bt:Image resid="icon-80" size="48" scale="2" />
+                    <bt:Image resid="icon-16" size="25" scale="3" />
                     <bt:Image resid="icon-32" size="32" scale="3" />
-                    <bt:Image resid="icon-80" size="80" scale="3" />
+                    <bt:Image resid="icon-80" size="48" scale="3" />
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="readCustomPaneUrl" />
@@ -98,15 +158,16 @@
           <bt:Image id="icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
-          </bt:Url>
+          <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html" />
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="groupLabel" DefaultValue="URI Test" />
-          <bt:String id="paneMobileReadButtonLabel" DefaultValue="URI">
-          </bt:String>
+          <bt:String id="paneMobileReadButtonLabel" DefaultValue="URI" />
+          <bt:String id="paneReadButtonLabel" DefaultValue="URI" />
+          <bt:String id="paneReadSuperTipTitle" DefaultValue="use some URIs to try and make new emails" />
         </bt:ShortStrings>
         <bt:LongStrings>
+          <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane where you can use some URIs to try and construct new emails"/>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
