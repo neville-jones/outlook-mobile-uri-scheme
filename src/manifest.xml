@@ -7,8 +7,8 @@
   <DisplayName DefaultValue="Oulook Mobile URI Test" />
   <Description DefaultValue="a simple Outlook web add-in for testing support for various Outlook URI schemes and syntaxes">
   </Description>
-  <IconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook64x64.png" />
-  <HighResolutionIconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook128x128.png" />
+  <IconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
+  <HighResolutionIconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/logo-filled.png" />
   <SupportUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net" />
   <AppDomains>
     <AppDomain>ms-outlook://compose</AppDomain>
@@ -68,19 +68,19 @@
           <MobileFormFactor>
             <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
               <Group id="msgMobileReadJanussealGroup">
-                <Label resid="jSGroupLabel" />
+                <Label resid="groupLabel" />
                 <Control id="msgMobileReadOpenPaneButton" xsi:type="MobileButton">
                   <Label resid="paneMobileReadButtonLabel" />
                   <Icon>
-                    <bt:Image resid="jS-icon-25" size="25" scale="1" />
-                    <bt:Image resid="jS-icon-32" size="32" scale="1" />
-                    <bt:Image resid="jS-icon-48" size="48" scale="1" />
-                    <bt:Image resid="jS-icon-25" size="25" scale="2" />
-                    <bt:Image resid="jS-icon-32" size="32" scale="2" />
-                    <bt:Image resid="jS-icon-48" size="48" scale="2" />
-                    <bt:Image resid="jS-icon-25" size="25" scale="3" />
-                    <bt:Image resid="jS-icon-32" size="32" scale="3" />
-                    <bt:Image resid="jS-icon-48" size="48" scale="3" />
+                    <bt:Image resid="icon-16" size="16" scale="1" />
+                    <bt:Image resid="icon-32" size="32" scale="1" />
+                    <bt:Image resid="icon-80" size="80" scale="1" />
+                    <bt:Image resid="icon-16" size="16" scale="2" />
+                    <bt:Image resid="icon-32" size="32" scale="2" />
+                    <bt:Image resid="icon-80" size="80" scale="2" />
+                    <bt:Image resid="icon-16" size="16" scale="3" />
+                    <bt:Image resid="icon-32" size="32" scale="3" />
+                    <bt:Image resid="icon-80" size="80" scale="3" />
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="readCustomPaneUrl" />
@@ -92,30 +92,21 @@
         </Host>
       </Hosts>
       <Resources>
-        <bt:Images>
-          <bt:Image id="jS-icon-16" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook16x16.png" />
-          <bt:Image id="jS-icon-20" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook20x20.png" />
-          <bt:Image id="jS-icon-24" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook24x24.png" />
-          <bt:Image id="jS-icon-25" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook25x25.png" />
-          <bt:Image id="jS-icon-32" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook32x32.png" />
-          <bt:Image id="jS-icon-40" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook40x40.png" />
-          <bt:Image id="jS-icon-48" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook48x48.png" />
-          <bt:Image id="jS-icon-64" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook64x64.png" />
-          <bt:Image id="jS-icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook80x80.png" />
-        </bt:Images>
+        <bt:images>
+          <bt:Image id="icon-16" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-16.png" />
+          <bt:Image id="icon-32" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-32.png" />
+          <bt:Image id="icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
+        </bt:images>
         <bt:Urls>
           <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
           </bt:Url>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="jSGroupLabel" DefaultValue="Janusseal App" />
-          <bt:String id="paneMobileReadButtonLabel" DefaultValue="Classify">
+          <bt:String id="groupLabel" DefaultValue="URI Test" />
+          <bt:String id="paneMobileReadButtonLabel" DefaultValue="URI">
           </bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can specify a security classification to be applied to the item.">
-          </bt:String>
-          <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane where you can inspect the security classification of a message, and send a classified reply.">
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
