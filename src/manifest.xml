@@ -55,8 +55,6 @@
       <Host xsi:type="MailHost">
       </Host>
     </Hosts>
-    <Resources>
-    </Resources>
     <VersionOverrides xsi:type="VersionOverridesV1_1" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1">
       <Requirements>
         <bt:Sets>
@@ -92,11 +90,11 @@
         </Host>
       </Hosts>
       <Resources>
-        <bt:images>
+        <bt:Images>
           <bt:Image id="icon-16" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-16.png" />
           <bt:Image id="icon-32" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-32.png" />
           <bt:Image id="icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/images/icon-80.png" />
-        </bt:images>
+        </bt:Images>
         <bt:Urls>
           <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
           </bt:Url>
