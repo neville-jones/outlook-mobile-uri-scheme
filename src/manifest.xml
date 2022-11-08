@@ -4,14 +4,15 @@
   <Version>1.0.0.0</Version>
   <ProviderName>nj</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Janusseal App" />
-  <Description DefaultValue="Security classification labels for Outlook">
+  <DisplayName DefaultValue="Oulook Mobile URI Test" />
+  <Description DefaultValue="a simple Outlook web add-in for testing support for various Outlook URI schemes and syntaxes">
   </Description>
-  <IconUrl DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook64x64.png" />
-  <HighResolutionIconUrl DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook128x128.png" />
-  <SupportUrl DefaultValue="https://www.janusnet.com" />
+  <IconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook64x64.png" />
+  <HighResolutionIconUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook128x128.png" />
+  <SupportUrl DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net" />
   <AppDomains>
     <AppDomain>ms-outlook://compose</AppDomain>
+    <AppDomain>ms-outlook://emails</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
@@ -24,17 +25,17 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        <SourceLocation DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
         </SourceLocation>
         <RequestedHeight>200</RequestedHeight>
       </DesktopSettings>
       <TabletSettings>
-        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        <SourceLocation DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
         </SourceLocation>
         <RequestedHeight>400</RequestedHeight>
       </TabletSettings>
       <PhoneSettings>
-        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        <SourceLocation DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
         </SourceLocation>
       </PhoneSettings>
     </Form>
@@ -92,18 +93,18 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="jS-icon-16" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook16x16.png" />
-          <bt:Image id="jS-icon-20" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook20x20.png" />
-          <bt:Image id="jS-icon-24" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook24x24.png" />
-          <bt:Image id="jS-icon-25" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook25x25.png" />
-          <bt:Image id="jS-icon-32" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook32x32.png" />
-          <bt:Image id="jS-icon-40" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook40x40.png" />
-          <bt:Image id="jS-icon-48" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook48x48.png" />
-          <bt:Image id="jS-icon-64" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook64x64.png" />
-          <bt:Image id="jS-icon-80" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook80x80.png" />
+          <bt:Image id="jS-icon-16" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook16x16.png" />
+          <bt:Image id="jS-icon-20" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook20x20.png" />
+          <bt:Image id="jS-icon-24" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook24x24.png" />
+          <bt:Image id="jS-icon-25" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook25x25.png" />
+          <bt:Image id="jS-icon-32" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook32x32.png" />
+          <bt:Image id="jS-icon-40" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook40x40.png" />
+          <bt:Image id="jS-icon-48" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook48x48.png" />
+          <bt:Image id="jS-icon-64" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook64x64.png" />
+          <bt:Image id="jS-icon-80" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/Images/jSOutlook80x80.png" />
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="readCustomPaneUrl" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+          <bt:Url id="readCustomPaneUrl" DefaultValue="https://gray-cliff-0c2bff610.2.azurestaticapps.net/new.html">
           </bt:Url>
         </bt:Urls>
         <bt:ShortStrings>
