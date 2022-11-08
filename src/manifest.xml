@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<OfficeApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="MailApp" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1">
+  <Id>F3035098-CBCA-46E4-B14A-D81E0A2C7D46</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>nj</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Janusseal App" />
+  <Description DefaultValue="Security classification labels for Outlook">
+  </Description>
+  <IconUrl DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook64x64.png" />
+  <HighResolutionIconUrl DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook128x128.png" />
+  <SupportUrl DefaultValue="https://www.janusnet.com" />
+  <AppDomains>
+    <AppDomain>ms-outlook://compose</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set MinVersion="1.1" Name="MailBox" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        </SourceLocation>
+        <RequestedHeight>200</RequestedHeight>
+      </DesktopSettings>
+      <TabletSettings>
+        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        </SourceLocation>
+        <RequestedHeight>400</RequestedHeight>
+      </TabletSettings>
+      <PhoneSettings>
+        <SourceLocation DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+        </SourceLocation>
+      </PhoneSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+  </Rule>
+  <DisableEntityHighlighting>true</DisableEntityHighlighting>
+  <VersionOverrides xsi:type="VersionOverridesV1_0" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.4">
+        <bt:Set Name="Mailbox" />
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+      </Host>
+    </Hosts>
+    <Resources>
+    </Resources>
+    <VersionOverrides xsi:type="VersionOverridesV1_1" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1">
+      <Requirements>
+        <bt:Sets>
+          <bt:Set MinVersion="1.4" Name="Mailbox" />
+        </bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <MobileFormFactor>
+            <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+              <Group id="msgMobileReadJanussealGroup">
+                <Label resid="jSGroupLabel" />
+                <Control id="msgMobileReadOpenPaneButton" xsi:type="MobileButton">
+                  <Label resid="paneMobileReadButtonLabel" />
+                  <Icon>
+                    <bt:Image resid="jS-icon-25" size="25" scale="1" />
+                    <bt:Image resid="jS-icon-32" size="32" scale="1" />
+                    <bt:Image resid="jS-icon-48" size="48" scale="1" />
+                    <bt:Image resid="jS-icon-25" size="25" scale="2" />
+                    <bt:Image resid="jS-icon-32" size="32" scale="2" />
+                    <bt:Image resid="jS-icon-48" size="48" scale="2" />
+                    <bt:Image resid="jS-icon-25" size="25" scale="3" />
+                    <bt:Image resid="jS-icon-32" size="32" scale="3" />
+                    <bt:Image resid="jS-icon-48" size="48" scale="3" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readCustomPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </ExtensionPoint>
+          </MobileFormFactor>
+        </Host>
+      </Hosts>
+      <Resources>
+        <bt:Images>
+          <bt:Image id="jS-icon-16" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook16x16.png" />
+          <bt:Image id="jS-icon-20" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook20x20.png" />
+          <bt:Image id="jS-icon-24" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook24x24.png" />
+          <bt:Image id="jS-icon-25" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook25x25.png" />
+          <bt:Image id="jS-icon-32" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook32x32.png" />
+          <bt:Image id="jS-icon-40" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook40x40.png" />
+          <bt:Image id="jS-icon-48" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook48x48.png" />
+          <bt:Image id="jS-icon-64" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook64x64.png" />
+          <bt:Image id="jS-icon-80" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net:443/janusseal/outlook/Images/jSOutlook80x80.png" />
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="readCustomPaneUrl" DefaultValue="https://janusnetofficeapps-debug2.azurewebsites.net/janusseal/outlook/Read.aspx?did=hearing.com.au&amp;rst=llXJ&amp;hmac=281326721a36b62969fffa4453be4fa8833c8fa5&amp;xe=5000&amp;d=1">
+          </bt:Url>
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="jSGroupLabel" DefaultValue="Janusseal App" />
+          <bt:String id="paneMobileReadButtonLabel" DefaultValue="Classify">
+          </bt:String>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can specify a security classification to be applied to the item.">
+          </bt:String>
+          <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane where you can inspect the security classification of a message, and send a classified reply.">
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>
