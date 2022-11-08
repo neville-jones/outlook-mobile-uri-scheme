@@ -40,7 +40,7 @@
       </PhoneSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteItem</Permissions>
+  <Permissions>ReadItem</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
   </Rule>
@@ -55,6 +55,8 @@
       <Host xsi:type="MailHost">
       </Host>
     </Hosts>
+    <Resources>
+    </Resources>
     <VersionOverrides xsi:type="VersionOverridesV1_1" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1">
       <Requirements>
         <bt:Sets>
@@ -65,7 +67,7 @@
         <Host xsi:type="MailHost">
           <MobileFormFactor>
             <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
-              <Group id="msgMobileReadJanussealGroup">
+              <Group id="msgMobileReadGroup">
                 <Label resid="groupLabel" />
                 <Control id="msgMobileReadOpenPaneButton" xsi:type="MobileButton">
                   <Label resid="paneMobileReadButtonLabel" />
